@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Interaktif</title>
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: sans-serif;
+        text-align: center;
+        padding: 50px;
+      }
+      h1 {
+        color: darkblue;
+      }
+      input {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 6px;
+        border: 1px solid gray;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-top: 10px;
+        cursor: pointer;
+        border: none;
+        background-color: darkblue;
+        color: white;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Halo Dunia!</h1>
+
+    <input type="text" id="nama" placeholder="Masukin nama lo...">
+    <br>
+    <button onclick="sapa()">Sapa Aku</button>
+
+    <p id="hasil"></p>
+
+    <script>
+      function sapa() {
+        const nama = document.getElementById("nama").value;
+        document.getElementById("hasil").innerText = "Halo " + nama + "!";
+      }
+    </script>
+  </body>
+</html>
